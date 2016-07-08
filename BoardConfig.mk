@@ -28,9 +28,6 @@ TARGET_BOOTLOADER_BOARD_NAME := qcom
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
-# Use dlmalloc instead of jemalloc for mallocs
-MALLOC_IMPL := dlmalloc
-
 TARGET_SPECIFIC_HEADER_PATH += device/sony/nicki/include
 
 # OTA Assert
@@ -130,7 +127,6 @@ BOARD_CUSTOM_BOOTIMG_MK := device/sony/nicki/custombootimg.mk
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/sony/nicki/rootdir/root/fstab.qcom
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_nicki
@@ -138,7 +134,6 @@ TARGET_LIBINIT_DEFINES_FILE := device/sony/nicki/init/init_nicki.cpp
 
 # Offline charging
 BOARD_CHARGER_ENABLE_SUSPEND := true
-BOARD_CHARGER_SHOW_PERCENTAGE := true
 BOARD_HAL_STATIC_LIBRARIES := libhealthd.nicki
 
 # CMHW
