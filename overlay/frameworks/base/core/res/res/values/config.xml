@@ -293,7 +293,7 @@
     <integer name="config_lowMemoryKillerMinFreeKbytesAbsolute">122880</integer>
 
     <!-- Show battery fully charged notification -->
-    <bool name="config_showBatteryFullyChargedNotification">true</bool>
+    <!-- <bool name="config_showBatteryFullyChargedNotification">true</bool> -->
 
     <!-- Whether to persist the notification for when a usb drive device is plugged in -->
     <bool name="config_persistUsbDriveNotification">true</bool>
